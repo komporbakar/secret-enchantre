@@ -1,0 +1,68 @@
+{
+    "product": [
+        {
+            "id": "1",
+            "name": "Enchanté Linen Shirt",
+            "slug": "enchabte-linen-shirt",
+            "image": "product1",
+            "price": 279900,
+            "deskripsi": ""
+        },
+        {
+            "id": "2",
+            "name": "Enchanté Linen Shirt",
+            "slug": "enchabte-linen-shirt",
+            "image": "product1",
+            "price": 279900,
+            "deskripsi": ""
+        },
+        {
+            "id": "3",
+            "name": "Enchanté Linen Shirt",
+            "slug": "enchabte-linen-shirt",
+            "image": "product1",
+            "price": 279900,
+            "deskripsi": ""
+        },
+        {
+            "id": "4",
+            "name": "Enchanté Linen Shirt",
+            "slug": "enchabte-linen-shirt",
+            "image": "product1",
+            "price": 279900,
+            "deskripsi": ""
+        },
+        {
+            "id": "5",
+            "name": "Enchanté Linen Shirt",
+            "slug": "enchabte-linen-shirt",
+            "image": "product1",
+            "price": 279900,
+            "deskripsi": ""
+        },
+        {
+            "id": "6",
+            "name": "Enchanté Linen Shirt",
+            "slug": "enchabte-linen-shirt",
+            "image": "product1",
+            "price": 279900,
+            "deskripsi": ""
+        },
+        {
+            "id": "7",
+            "name": "Enchanté Linen Shirt",
+            "slug": "enchabte-linen-shirt",
+            "image": "product1",
+            "price": 279900,
+            "deskripsi": ""
+        },
+        {
+            "id": "8",
+            "name": "Enchanté Linen Shirt",
+            "slug": "enchabte-linen-shirt",
+            "image": "product1",
+            "price": 279900,
+            "deskripsi": ""
+        }
+    ]
+}

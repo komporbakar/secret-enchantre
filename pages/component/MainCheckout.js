@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { toast } from 'react-toastify'
@@ -23,9 +24,9 @@ import { toast } from 'react-toastify'
          <div className='lg:px-24 px-6'>
         <section id='Breadcumb'>
             <div className="flex flex-wrap justify-start my-7">
-                <a href="/" className='text-[#D0D5DD]'>Home</a>
+                <Link href="/" className='text-[#D0D5DD]'>Home</Link>
                 <span className='mx-2'>/</span>
-                <a href="#" >Checkout</a>
+                <Link href="#" >Checkout</Link>
                 <span className='mx-2'>/</span>
                 <p className='text-[#D0D5DD]'>Payment</p>
             </div>

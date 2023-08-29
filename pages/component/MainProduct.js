@@ -10,7 +10,7 @@ import React, { useEffect, useState } from 'react'
 const MainProduct = ({ data }) => {
     const [jumlah, setjumlah] = useState(1)
     const [harga, setHarga] = useState(data.price)
-
+    
     const tambah = () =>{
         jumlah < 1  ?
          setjumlah(jumlah) : setjumlah(jumlah + 1)
@@ -23,7 +23,8 @@ const MainProduct = ({ data }) => {
     }
 
     useEffect(() => {
-        setHarga(jumlah * data.price)
+        const price = jumlah * data.price
+        setHarga(price)
     }, [jumlah])
 
     console.log(harga)
@@ -32,9 +33,9 @@ const MainProduct = ({ data }) => {
     <div className='lg:px-24 px-6'>
         <section id='Breadcumb'>
             <div className="flex flex-wrap justify-start my-7">
-                <a href="/" className='text-[#D0D5DD]'>Home</a>
+                <Link href="/" className='text-[#D0D5DD]'>Home</Link>
                 <span className='mx-2'>/</span>
-                <a href="#" className='text-[#D0D5DD]'>Women</a>
+                <Link href="#" className='text-[#D0D5DD]'>Women</Link>
                 <span className='mx-2'>/</span>
                 <p>{data.name}</p>
             </div>

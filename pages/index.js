@@ -5,7 +5,6 @@ import Footer from './component/Footer'
 import axios from 'axios'
 
 const Home = ({data}) => {
-  console.log(data)
   return (
   <div className="">
     <Navbars/>

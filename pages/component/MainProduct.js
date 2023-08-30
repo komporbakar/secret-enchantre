@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 
 const MainProduct = ({ data }) => {
     const [jumlah, setjumlah] = useState(1)
-    const [harga, setHarga] = useState(data.price)
+    const [harga, setHarga] = useState(data?.price ?? 0)
     
     const tambah = () =>{
         jumlah < 1  ?
@@ -20,10 +20,14 @@ const MainProduct = ({ data }) => {
     }
 
     useEffect(() => {
-        setHarga(jumlah * data.price)
-    }, [jumlah, data.price])
+        if (data && data.price) {
+            setHarga(jumlah * data.price);
+        }
+    }, [jumlah, data])
 
-    console.log(harga)
+    if (!data) {
+        return <p>Loading...</p>;
+    }
 
   return (
     <div className='lg:px-24 px-6'>
@@ -33,7 +37,7 @@ const MainProduct = ({ data }) => {
                 <span className='mx-2'>/</span>
                 <Link href="#" className='text-[#D0D5DD]'>Women</Link>
                 <span className='mx-2'>/</span>
-                <p>{data.name}</p>
+                <p>{data?.name}</p>
             </div>
         </section>
         <section className='md:mb-48 mb-10'>

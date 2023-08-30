@@ -1,27 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { fetchApi } from './services'
+import React from 'react'
 import CardProduct from './molecules/CardProduct'
 import ContentItem from './molecules/ContentItem'
 import Image from 'next/image'
-import axios from 'axios'
 
 const Products = ({data}) => {
-    // console.log(item)
-    // const [products, setProducts] = useState([])
-
-    // const getProduct = async() => {
-    //    try {
-    //     const response = await fetchApi()
-    //         setProducts(response)
-    //    } catch (error) {
-    //     console.log('Error fetching products:', error);
-    //    }
-    // }
-    // useEffect(() => {
-    //     getProduct()
-    // }, [])
   return (
-    <div className=' '>
+    <div >
         <section className='md:mb-48 px-5 md:px-24'>
         <h3 className="text-lg font-bold text-center my-6 md:text-4xl md:mb-24">New Product </h3>
             <div className="flex flex-wrap ">

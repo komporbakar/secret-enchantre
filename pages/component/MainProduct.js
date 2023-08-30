@@ -1,9 +1,6 @@
-// import axios from 'axios'
-import axios from 'axios'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-// import { getServerSideProps } from 'next';
 
 
 
@@ -23,9 +20,8 @@ const MainProduct = ({ data }) => {
     }
 
     useEffect(() => {
-        const price = jumlah * data.price
-        setHarga(price)
-    }, [jumlah])
+        setHarga(jumlah * data.price)
+    }, [jumlah, data.price])
 
     console.log(harga)
 
